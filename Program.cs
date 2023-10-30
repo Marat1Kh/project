@@ -4,12 +4,11 @@ namespace OpenDotaConsoleApp
 {
     class Program
     {
-        static async Task Main(string[] args)
+       public static async Task Main(string[] args)
         {
             Console.WriteLine("OpenDota Console App");
 
             OpenDotaApiClient openDotaApiClient = new OpenDotaApiClient();
-
             Console.Write("Enter a match ID: ");
             if (long.TryParse(Console.ReadLine(), out long matchId))
             {
